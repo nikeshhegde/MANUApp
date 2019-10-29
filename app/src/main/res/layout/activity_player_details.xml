@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#C70101"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="257dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imageAdidas"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/adidas_logo" />
+
+        <ImageView
+            android:id="@+id/imageChevrolet"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/chevrolet_logo" />
+
+        <ImageView
+            android:id="@+id/imageAon"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/aon_logo" />
+
+        <ImageView
+            android:id="@+id/imageKohler"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/kohler_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="242dp">
+
+            <ImageView
+                android:id="@+id/playerImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/playerNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/playerImage"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="3dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textCol"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:text="Pos" />
+
+                <TextView
+                    android:id="@+id/playerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/playerImage"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="3dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textCol"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    tools:text="Name" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Age"
+            android:textColor="@color/textBackCol"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/playerAge"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="TextView"
+                android:textColor="@color/textBackCol"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Position"
+            android:textColor="@color/textBackCol"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/playerPosition"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="TextView"
+                android:textColor="@color/textBackCol"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Country"
+            android:textColor="@color/textBackCol"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/playerCountry"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="TextView"
+                android:textColor="@color/textBackCol"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageCountry"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/moreWebButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="More info"
+                android:textColor="@color/textCol"
+                android:textSize="24sp"
+                android:backgroundTint="@color/manu"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
